@@ -91,12 +91,14 @@ def format_ieee(input_path, output_path):
         paragraph = document.add_paragraph()
         paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
         run = paragraph.add_run("Abstract—")
+        run.bold=True
         run.font.name = "Times New Roman"
         run.font.size = Pt(10)
         run.italic = True
         run = paragraph.add_run(text)
         run.font.name = "Times New Roman"
         run.font.size = Pt(10)
+        run.bold=True
 
     def author():
         author_name = "Author1"
@@ -114,13 +116,16 @@ def format_ieee(input_path, output_path):
         keyword_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
         keyword_run = keyword_paragraph.add_run("Keywords—")
         keyword_run.italic = True
+        keyword_run.bold=True
         keyword_run.font.name = "Times New Roman"
         keyword_run.font.size = Pt(10)
         keyword_run = keyword_paragraph.add_run(f" {keywords}")
         keyword_run.italic = True
         keyword_run.font.name = "Times New Roman"
+        keyword_run.bold=True
         keyword_run.font.size = Pt(10)
         keyword_paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.JUSTIFY
+
 
     def main_content(t):
         paragraph = document.add_paragraph(t)
@@ -164,6 +169,7 @@ def format_ieee(input_path, output_path):
                 keyword(content)
 
             elif first.lower() == "references":
+                level1("REFERENCES")
                 content = ""
                 i += 1
                 while i < len(lines) and lines[i].strip() != "":
