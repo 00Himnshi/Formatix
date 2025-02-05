@@ -1,9 +1,5 @@
 # ProFormatter - Automated IEEE Formatting Tool
 
-![ProFormatter Banner](https://via.placeholder.com/1200x400?text=ProFormatter+-+Automated+IEEE+Formatting+Tool)
-
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fproformatter.onrender.com)](https://proformatter.onrender.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ProFormatter is an automated IEEE formatting tool that converts plain text into properly formatted IEEE-style documents. This tool saves time and ensures consistency in research paper formatting.
 
