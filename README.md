@@ -1,7 +1,7 @@
-# ProFormatter - Automated IEEE Formatting Tool
+# Formatix - Automated IEEE Formatting Tool
 
 
-ProFormatter is an automated IEEE formatting tool that converts plain text into properly formatted IEEE-style documents. This tool saves time and ensures consistency in research paper formatting.
+Formatix is an automated IEEE formatting tool that converts plain text into properly formatted IEEE-style documents. This tool saves time and ensures consistency in research paper formatting.
 
 ## 🚀 Features
 
