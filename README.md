@@ -10,8 +10,8 @@ Formatix is an automated IEEE formatting tool that converts plain text into prop
 - 📑 **Title Page Generation**: Automatically formats the title page with required elements.
 - 🏗 **Consistent Styling**: Ensures all headings, subheadings, and body text follow IEEE standards.
 - 📏 **IEEE-Compliant Margins**: Sets correct margins and line spacing.
-- 🎞 **Smooth Animations**: Enhances the user experience with animations.
-
+- 🎞 **DOCX Conversion**: Allows users to convert their simple TXT files into .DOCX format effortlessly.
+- 
 ## 🔧 Tech Stack
 
 - **Frontend**: HTML, CSS (Bootstrap 4)
