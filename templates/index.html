@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo"><span>Formatix</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#guide">Input Guide</a>
+            </li>
+            <li>
+                <a href="#features">Features</a>
+            </li>
+            
+        </ul>
+
+        <button class="try"><a href="#tool" style=" text-decoration: none; 
+    color: inherit;">Try Now</a></button>
+    </header>
+    <section class="about" id="about">
+        
+        <img src="{{ url_for('static', filename='designer.png') }}" style="width: 50%; height: auto;">
+        width: 50%; 
+        height: auto;"  >
+        <div class="about-text">
+            <h1><span>
+Formatix</span>: a smart solution to automate the entire Research Paper formatting process.</h1>
+
+<br>
+In One Click transform your plain text into a perfectly formatted IEEE-compliant document.
+</div>
+    </section>
+    <section class="features" id="features">
+        <div class="Heading"><h2>What Formatix Offers?</h2></div>
+        <div class="chits">
+            <div class="card">
+                <h3>TXT to DOCX Conversion</h3>
+                <p>Accepts a plain text (.txt) input file and generates a formatted IEEE-compliant document in .docx format, ready for download.</p>
+            </div>
+            <div class="card">
+                <h3>Automatic Title Page</h3>
+                <p>Generates a professional title page with the title, authors, affiliations, and abstract.</p>
+            </div>
+            <div class="card">
+                <h3>Heading Recognition & Formatting</h3>
+                <p>Identifies main sections, subsections, and sub-subsections in the text and applies IEEE-specific formatting styles.</p>
+            </div>
+            <div class="card">
+                <h3>Body Text Consistency</h3>
+                <p>Ensures proper font size, line spacing, and paragraph formatting throughout the document.</p>
+            </div>
+            <div class="card">
+                <h3>Margin Compliance</h3>
+                <p>Automatically sets 1-inch margins on all sides, adhering to IEEE guidelines.</p>
+            </div>
+        </div>
+        
+    </section>
+    <section class="guide" id="guide">
+        <div class="guide-container">
+            <h2>General Formatting Rules</h2>
+            <div class="guide-chits">
+                <div class="guide-card">The uploaded text file must begin with the Abstract section.</div>
+                <div class="guide-card">Do not include the title of the paper or author names, as these will be automatically formatted.</div>
+                <div class="guide-card">Separate each level section (e.g., Abstract, Keywords, Introduction, Methodology, References) with a blank line before each heading.</div>
+                <div class="guide-card">Do not leave blank lines between the content within a section.</div>
+            </div>
+            <h3>Sample TXT Structure:</h3>
+            <div class="sample-image">
+                <img src="{{ url_for('static', filename='sample.png') }}" alt="Sample TXT Structure">
+            </div>
+        </div>
+    </section>
+    
+    <section class="tool" id="tool">
+      
+        <div class="glass">
+            <h1>Automated IEEE Formatting Tool</h1>
+            <p>Upload your plain text file and download a properly formatted IEEE document.</p>
+            <form id="uploadForm" action="/format" method="POST" enctype="multipart/form-data">
+                <input type="file" class="btn" id="fileInput" name="file" accept=".txt" required>
+                <p><br></p>
+                <button type="submit" class="btn">Generate</button>
+                <div id="errorMessage" class="errorMessage"></div>
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>
