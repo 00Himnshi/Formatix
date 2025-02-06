@@ -21,7 +21,10 @@ Formatix is an automated IEEE formatting tool that converts plain text into prop
 
 ## 📸 Screenshots
 
-Coming soon...
+![image](https://github.com/user-attachments/assets/1acc5c3e-9bae-4306-9747-c439387b77e4)
+![image](https://github.com/user-attachments/assets/07286efd-445f-4cc0-bb2d-1e702a192599)
+![image](https://github.com/user-attachments/assets/734dcf3e-ed80-42ac-9f35-c0dd0a9f9f37)
+
 
 ## 📦 Installation & Usage
 
