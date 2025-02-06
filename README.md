@@ -14,7 +14,7 @@ Formatix is an automated IEEE formatting tool that converts plain text into prop
   
 ## 🔧 Tech Stack
 
-- **Frontend**: HTML, CSS (Bootstrap 4)
+- **Frontend**: HTML, CSS 
 - **Backend**: Python (Flask)
 - **Libraries**: `python-docx` for document formatting
 - **Deployment**: Render
