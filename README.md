@@ -1,5 +1,5 @@
 # Formatix - Automated IEEE Formatting Tool
-
+DEMO video: https://drive.google.com/file/d/1JEJdBnWJihRHmoo8cNTKKTZRUAXPxhsT/view?usp=sharing
 
 Formatix is an automated IEEE formatting tool that converts plain text into properly formatted IEEE-style documents. This tool saves time and ensures consistency in research paper formatting.
 
