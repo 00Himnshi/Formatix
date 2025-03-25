@@ -27,7 +27,11 @@ def format_file():
 
     try:
         format_ieee(input_path, output_path)
-        return send_file(output_path, as_attachment=True)
+        res= send_file(output_path, as_attachment=True)
+        # Delete files after sending
+        os.remove(input_path)  # Delete uploaded file
+        os.remove(output_path)  # Delete generated file
+        return res
     except Exception as e:
         return f"Error processing file: {e}", 500
 
