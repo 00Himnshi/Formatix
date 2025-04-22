@@ -71,5 +71,3 @@ Formatix is an automated IEEE formatting tool that converts plain text into prop
 Check out the live version: [ProFormatter](https://proformatter.onrender.com/)
 
 
-
-🚀 **Start formatting your research papers the smart way with ProFormatter!**
